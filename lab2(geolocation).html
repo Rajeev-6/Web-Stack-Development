@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html>
+    <style>
+        body{
+            background-color: #44AF69
+        }
+    </style>
+<body>
+<center><h3>enter your location.<br></nr> Kindly allow the brower to access your current location</h3></center>
+<center><p>Click the button send your coordinates.</p>
+
+<button onclick="getLocation()">Send</button></center>
+
+<p id="demo"></p>
+
+<script>
+var x = document.getElementById("demo");
+
+function getLocation() {
+  if (navigator.geolocation) {
+    navigator.geolocation.getCurrentPosition(showPosition);
+  } else { 
+    x.innerHTML = "Geolocation is not supported by this browser.";
+  }
+}
+
+function showPosition(position) {
+  x.innerHTML = "Latitude: " + position.coords.latitude + 
+  "<br>Longitude: " + position.coords.longitude;
+}
+</script>
+
+</body>
+</html>
