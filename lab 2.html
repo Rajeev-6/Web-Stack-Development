@@ -48,16 +48,46 @@
         </tbody>
       </table>
 
+      <canvas id="myCanvas" width="200" height="100" style="border:1px solid hwb(0 7% 93%);">
+      </canvas>
+        
+        <script>
+        var c = document.getElementById("myCanvas");
+        var ctx = c.getContext("2d");
+        ctx.font = "30px Arial";
+        ctx.strokeText("SPORTS",10,50);
+        </script>
+
 
       <audio controls autoplay>
         <source src="buzzer.ogg" type="audio/ogg">
       </audio>
 
 
-      <video width="320" height="240" autoplay>
-        <source src="videoplayback.mp4" type="video/mp4">
+      <video controls width="320" height="240">
+        <source src="videoplayback.mp4" >
       
       </video>
     
+      <form>
+        
+        <div style="font-size:25px;background-color: grey;border-radius: 20px;">
+            <p style="font-size: 35px; background-color: GREY;" align="center">SIGNUP</p>
+            NAME     <input type="email" ><br><br>
+            USERNAME <input type="password"><br><br>
+            PASSWORD <input type="text" ><br><br>
+            AGE : &emsp;<input type="number" max="45" min="10"><br><br>
+            SELECT THE SPORT:<br><br>
+            <input type="radio" name="sport" value="cricket">Cricket &emsp;
+            <input type="radio" name="sport" value="basketball">Basketball &emsp;
+            <input type="radio" name="sport" value="football">Football &emsp;
+            <input type = "button" value="SUBMIT"/> <br><br>
+           
+        
+    </form>
+
+    
+    
+      
 </body>
 </html>
