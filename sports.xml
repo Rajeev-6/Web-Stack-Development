@@ -1,0 +1,87 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-stylesheet type="text/xsl" href="sports.xsl"?>
+
+<basketball>
+
+  <profile>
+    <playerid>100</playerid>
+    <playername>Lebron James</playername>
+    <team>Cleveland</team>
+    <age>33</age>
+    <position>Small Forward</position>
+  </profile>
+
+  <profile>
+    <playerid>101</playerid>
+    <playername>Magic Johnson</playername>
+    <team>Los Angeles</team>
+    <age>35</age>
+    <position>Point Guard</position>
+  </profile>
+
+  <profile>
+    <playerid>102</playerid>
+    <playername>Larry Bird</playername>
+    <team>Boston</team>
+    <age>34</age>
+    <position>Power Forward</position>
+  </profile>
+
+  <profile>
+    <playerid>103</playerid>
+    <playername>Steph Curry</playername>
+    <team>Oakland</team>
+    <age>33</age>
+    <position>Shooting Guard</position>
+  </profile>
+
+  <profile>
+    <playerid>104</playerid>
+    <playername>Michael Jordan</playername>
+    <team>Chicago</team>
+    <age>34</age>
+    <position>Shooting Guard</position>
+  </profile>
+
+  <profile>
+    <playerid>105</playerid>
+    <playername>Isiah Thomas</playername>
+    <team>Detroit</team>
+    <age>32</age>
+    <position>Small Forward</position>
+  </profile>
+
+  <profile>
+    <playerid>106</playerid>
+    <playername>Shaquille O'neal</playername>
+    <team>Los Angeles</team>
+    <age>37</age>
+    <position>Center</position>
+  </profile>
+
+  <profile>
+    <playerid>107</playerid>
+    <playername>Tim Duncan</playername>
+    <team>San Antonio</team>
+    <age>36</age>
+    <position>Center</position>
+  </profile>
+
+  <profile>
+    <playerid>108</playerid>
+    <playername>Anthony Davis</playername>
+    <team>Los Angeles</team>
+    <age>29</age>
+    <position>Center</position>
+  </profile>
+
+  <profile>
+    <playerid>109</playerid>
+    <playername>Kyrie Irving</playername>
+    <team>Brooklyn</team>
+    <age>27</age>
+    <position>Point Guard</position>
+  </profile>
+
+    
+  </basketball>
