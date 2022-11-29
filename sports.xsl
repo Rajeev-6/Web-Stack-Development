@@ -9,7 +9,7 @@
     {
       text-align: center;
       border-radius:20px;
-      background-color: gray;
+      background-color: antiquewhite;
       border-width: 3px;
       border-color:black;
       transition: .2s;
@@ -36,27 +36,7 @@
   </head>
   <body>
   <center>
-  <h2>Profile</h2>
-  <table border="2">
-    <tr bgcolor="black">
-      <th>Id</th>
-      <th>Name</th>
-      <th>Team</th>
-      <th>Age</th>
-      <th>Position</th>
-    </tr>
-    <xsl:for-each select="basketball/profile">
-    <tr>
-      <td bgcolor="gray"><xsl:value-of select="playerid"/></td>
-      <td bgcolor="green"><xsl:value-of select="playername"/></td>
-      <td bgcolor="gray"><xsl:value-of select="team"/></td>
-      <td bgcolor="green"><xsl:value-of select="age"/></td>
-      <td bgcolor="gray"><xsl:value-of select="position"/></td>
-    </tr>
-    </xsl:for-each>
-  </table>
-
-<h2>player sorted by name</h2>
+  <h2>Players Details</h2>
   <table border="2">
     <tr bgcolor="#9acd32">
       <th>playerid</th>
@@ -66,18 +46,38 @@
       <th>position</th>
     </tr>
     <xsl:for-each select="basketball/profile">
-    <xsl:sort select="playername"/>
     <tr>
-      <td bgcolor="green"><xsl:value-of select="playerid"/></td>
-      <td bgcolor="gray"><xsl:value-of select="playername"/></td>
-      <td bgcolor="green"><xsl:value-of select="team"/></td>
+      <td bgcolor="gray"><xsl:value-of select="playerid"/></td>
+      <td bgcolor="green"><xsl:value-of select="playername"/></td>
+      <td bgcolor="gray"><xsl:value-of select="team"/></td>
       <td bgcolor="gray"><xsl:value-of select="age"/></td>
       <td bgcolor="green"><xsl:value-of select="position"/></td>
     </tr>
     </xsl:for-each>
   </table>
 
-<h2> team: Los Angeles</h2>
+<h2>Player Sorted By Name</h2>
+  <table border="2">
+    <tr bgcolor="#9acd32">
+      <th>playerid</th>
+      <th>playername</th>
+      <th>team</th>
+      <th>age</th>
+      <th>position</th>
+    </tr>
+    <xsl:for-each select="basketball/profile">
+    <xsl:sort select="type"/>
+    <tr>
+      <td bgcolor="gray"><xsl:value-of select="playerid"/></td>
+      <td bgcolor="green"><xsl:value-of select="playername"/></td>
+      <td bgcolor="gray"><xsl:value-of select="team"/></td>
+      <td bgcolor="gray"><xsl:value-of select="age"/></td>
+      <td bgcolor="green"><xsl:value-of select="position"/></td>
+    </tr>
+    </xsl:for-each>
+  </table>
+
+<h2> Team: Los Angeles</h2>
 <table border="2">
     <tr bgcolor="#9acd32">
       <th>playerid</th>
@@ -89,28 +89,45 @@
     <xsl:for-each select="basketball/profile">
     <xsl:if test="team='Los Angeles'">
     <tr>
-       <td bgcolor="gray"><xsl:value-of select="playerid"/></td>
+      <td bgcolor="gray"><xsl:value-of select="playerid"/></td>
       <td bgcolor="green"><xsl:value-of select="playername"/></td>
       <td bgcolor="gray"><xsl:value-of select="team"/></td>
-      <td bgcolor="green"><xsl:value-of select="age"/></td>
-      <td bgcolor="gray"><xsl:value-of select="position"/></td>
+      <td bgcolor="gray"><xsl:value-of select="age"/></td>
+      <td bgcolor="green"><xsl:value-of select="position"/></td>
     </tr>
     </xsl:if>
     </xsl:for-each>
   </table>
 
-<h2> age after 30</h2>
+<h2> Players Age After 30</h2>
 <table border="2">
     <tr bgcolor="yellow">
-       <th>playerid</th>
+      <th>playerid</th>
       <th>playername</th>
       <th>team</th>
       <th>age</th>
       <th>position</th>
     </tr>
     <xsl:for-each select="basketball/profile">
-
-
+    <tr>
+      <td bgcolor="gray"><xsl:value-of select="Title"/></td>
+      <xsl:choose>
+        <xsl:when test="age &gt; 30">
+           <td bgcolor="blue">
+           <xsl:value-of select="playername"/>
+           </td>
+        </xsl:when>
+        <xsl:otherwise>
+          <td><xsl:value-of select="playername"/></td>
+        </xsl:otherwise>
+        </xsl:choose>
+      <td bgcolor="gray"><xsl:value-of select="playerid"/></td>
+      <td bgcolor="green"><xsl:value-of select="playername"/></td>
+      <td bgcolor="gray"><xsl:value-of select="team"/></td>
+      <td bgcolor="gray"><xsl:value-of select="age"/></td>
+      <td bgcolor="green"><xsl:value-of select="position"/></td>
+    </tr>
+    </xsl:for-each>
   </table>
 
   </center>
