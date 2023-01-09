@@ -1,0 +1,44 @@
+[
+    {
+    "id": 1,
+    "Teamname": "Los Angeles",
+    "Playername": "James",
+    "Age": 38,
+    "Position": "Small Forward"
+    },
+    {
+    "id": 2,
+    "Teamname": "Los Angeles",
+    "Playername": "Magic ",
+    "Age": 32,
+    "Position": "Point Guard"
+    },
+    {
+    "id": 3,
+    "Teamname": "Golden State",
+    "Playername": "Steph",
+    "Age": 33,
+    "Position": "Power Forward"
+    },
+    {
+    "id": 4,
+    "Teamname": "Miami",
+    "Playername": "Shaq",
+    "Age": 35,
+    "Position": "Center"
+    },
+    {
+    "id": 5,
+    "Teamname": "Dallas",
+    "Playername": "Luka",
+    "Age": 24,
+    "Position": "Shooting Guard"
+    },
+    {
+    "id": 6,
+    "Teamname": "Houston",
+    "Playername": "Barkley",
+    "Age": 36,
+    "Position": "Small Forward"
+    }
+    ]
